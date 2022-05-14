@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Robes de mariée</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body class="body">
+        <nav class="navigator">
+            <input class="searchbar" value="" placeholder="Chercher..." id="search" onchange="openPage()">
+        </nav> 
+        <div class="slogan">
+            <p>Nous nous</p>
+            <p>marions pour vous</p>
+        </div>  
+        <div class="Bild1">
+            <a href="page1.html"><img src="img/images/Bild1.png"></a>
+        </div>
+        <div class="Bild2">
+            <a href="page2.html"><img src="img/images/Bild2.png"></a>
+        </div>
+        <div class="Bild3">
+            <a href="page3.html"><img src="img/images/Bild3.png"></a>
+        </div>
+        <div class="Bild1Text">
+            <p>Robes de mariage</p>
+        </div>
+        <div class="Bild2Text">
+            <p>Costumes</p>
+        </div>
+        <div class="Bild3Text">
+            <p>Robe de soirée</p>
+        </div>
+    </body>
+</html>
+
+<script>
+    function openPage() {
+        var x = document.getElementById("search").value;
+
+        if (x === "robes de mariages") {
+            window.open("/page1.html");
+        }
+
+        if (x === "robe de mariage") {
+            window.open("/page1.html");
+        }
+
+        if (x === "costumes") {
+            window.open("/page2.html");
+        }
+
+        if (x === "Costumes") {
+            window.open("/page2.html");
+        }
+
+        if (x === "Costume") {
+            window.open("/page2.html");
+        }
+
+        if (x === "Robe de Mariage") {
+            window.open("/page1.html");
+        }
+
+        if (x === "Robes de Mariages") {
+            window.open("/page1.html");
+        }
+
+        if (x === "costumes") {
+            window.open("/page2.html");
+        }
+
+        if (x === "Costumes") {
+            window.open("/page2.html");
+        }
+
+        if (x === "soirée") {
+            window.open("/page3.html");
+        }
+        if (x === "soir") {
+            window.open("/page3.html");
+        }
+        if (x === "Robe de soirée") {
+            window.open("/page3.html");
+        }
+        if (x === "robe de soirée") {
+            window.open("/page3.html");
+        }
+    }
+</script>
+
+<style css>
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300;1,700&display=swap');
+.body {
+    background: rgb(117, 117, 117);
+}
+.navigator {
+    width: 100%;
+    height: 50px;
+    background: goldenrod;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+}
+.slogan {
+    width: 100%;
+    height: 150px;
+    background: rgb(117, 117, 117);
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Comic Neue', cursive;
+}
+.Bild1 {
+    width: 300px;
+    height: 400px;
+    background: black;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    filter: blur(5px);
+}
+.Bild1Text {
+    width: 15%;
+    height: 150px;
+    background: rgb(117, 117, 117);
+    position: absolute;
+    top: 670px;
+    left: 210px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Comic Neue';
+}
+.Bild2 {
+    width: 300px;
+    height: 400px;
+    background: black;
+    position: absolute;
+    top: 250px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    filter: blur(5px);
+}
+.Bild2Text {
+    width: 15%;
+    height: 150px;
+    background: rgb(117, 117, 117);
+    position: absolute;
+    top: 670px;
+    text-align: center;
+    font-size: 25px;
+    left: 810px;
+    color: rgb(255, 255, 255);
+    font-family: 'Comic Neue';
+}
+.Bild3 {
+    width: 300px;
+    height: 400px;
+    background: black;
+    position: absolute;
+    top: 250px;
+    right: 250px;
+    filter: blur(5px);
+}
+.Bild3Text {
+    width: 15%;
+    height: 150px;
+    background: rgb(117, 117, 117);
+    position: absolute;
+    top: 670px;
+    right: 318px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Comic Neue';
+}
+.Bild1:hover {
+    filter: none;
+}
+.Bild2:hover {
+    filter: none; 
+}
+.Bild3:hover {
+    filter: none;
+}
+@media screen and (max-width: 900px) {
+}
+.searchbar {
+border-radius: 10px;
+width: 250px;
+height: 25px;
+position: absolute;
+top: 12px;
+right: 50px;
+outline: none;
+border: none;
+}
+</style>
